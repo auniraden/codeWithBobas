@@ -1,0 +1,48 @@
+
+ * For example: car object> propertis: name, model ,weight> methods: start, drive, brake, stop
+ * Objects = variables too.
+ *
+ * Assign object:
+ * let student = "Moon";
+ *
+ * Can contain many values:
+ * const student = {course:"Software Engineering", gradYear: "2024"};
+ *
+ * values written name:values
+ *
+ * Object Definition (define and create object)
+ * const student = {
+ *      firstName:"Mary",
+ *      lastName="Jane",
+ *      age:50,
+ *      eyeColor:"blue"
+ * };
+ *
+ * name:values pairs = properties
+ *
+ * How to access objects (2 ways);
+ * >objectName.propertyName --- student.lastName;
+ * >objectName["propertyName"] ---- student["lastName"];
+ *
+ * const person = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+
+ this keyword ---> object
+
+ In an object method, this refers to the object.
+Alone, this refers to the global object.
+In a function, this refers to the global object.
+In a function, in strict mode, this is undefined.
+In an event, this refers to the element that received the event.
+Methods like call(), apply(), and bind() can refer this to any object.
+
+
+"new" variable is created as an objects. such as x = new Car();
+avoid String, Number, Boolean objects such as x = new String()/Number()/Boolean()
